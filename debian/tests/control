@@ -1,0 +1,2 @@
+Tests: smoke
+Depends: @, dpkg-dev, python3-gi

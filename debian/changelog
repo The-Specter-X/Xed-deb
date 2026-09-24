@@ -1,0 +1,5 @@
+xed (3.9.0+ds-1) UNRELEASED; urgency=medium
+
+  * Initial Debian packaging. (Closes: #830598)
+
+ -- James Arden <theoverseer@tuta.com>  Thu, 24 Sep 2026 11:00:00 +0000

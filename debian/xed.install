@@ -1,0 +1,7 @@
+usr/bin/xed
+usr/lib/*/xed/girepository-1.0/Xed-1.0.typelib
+usr/lib/*/xed/libxed.so
+usr/lib/*/xed/plugins/
+usr/share/applications/org.x.editor.desktop
+usr/share/dbus-1/services/org.x.editor.service
+usr/share/man/man1/xed.1

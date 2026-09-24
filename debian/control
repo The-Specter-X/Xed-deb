@@ -1,0 +1,72 @@
+Source: xed
+Section: editors
+Priority: optional
+Maintainer: James Arden <theoverseer@tuta.com>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ gobject-introspection,
+ intltool,
+ itstool,
+ libgirepository1.0-dev,
+ libglib2.0-dev,
+ libgspell-1-dev,
+ libgtk-3-dev,
+ libgtksourceview-4-dev,
+ libpeas-dev,
+ libx11-dev,
+ libxapp-dev (>= 1.9),
+ libxml2-dev,
+ meson,
+ pkgconf,
+ python3,
+ python-gi-dev,
+ yelp-tools,
+Standards-Version: 4.7.4.1
+Rules-Requires-Root: no
+Homepage: https://github.com/linuxmint/xed
+Vcs-Browser: https://salsa.debian.org/Overseer/xed
+Vcs-Git: https://salsa.debian.org/Overseer/xed.git
+
+Package: xed
+Architecture: any
+Depends:
+ gir1.2-gtksource-4,
+ gir1.2-peas-1.0,
+ iso-codes,
+ python3-gi,
+ xapps-common (>= 1.9),
+ xed-common (= ${source:Version}),
+ ${misc:Depends},
+ ${python3:Depends},
+ ${shlibs:Depends},
+Recommends: yelp
+Description: small and lightweight GTK text editor
+ Xed is a GTK text editor with tabs, syntax highlighting, search and replace,
+ remote file support, printing, and a plugin system. It is part of Linux
+ Mint's XApps project.
+
+Package: xed-common
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: architecture independent files for the Xed text editor
+ Xed is a GTK text editor with tabs, syntax highlighting, and plugins.
+ .
+ This package provides translations, help files, icons, plugin data, and
+ GSettings schemas.
+
+Package: xed-dev
+Section: libdevel
+Architecture: any
+Depends:
+ libgtk-3-dev,
+ libgtksourceview-4-dev,
+ libpeas-dev,
+ xed (= ${binary:Version}),
+ ${misc:Depends},
+Description: development files for the Xed text editor
+ Xed is a GTK text editor with a plugin interface.
+ .
+ This package contains headers, pkg-config metadata, and GObject
+ introspection data for developing Xed plugins.

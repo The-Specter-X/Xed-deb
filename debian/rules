@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with python3
+
+override_dh_auto_configure:
+	dh_auto_configure -- -Ddocs=false
+
+# Upstream's Meson tests drive an interactive GUI with dogtail.
+override_dh_auto_test:
+	:
+
+override_dh_python3:
+	dh_python3 /usr/lib/$(DEB_HOST_MULTIARCH)/xed/plugins

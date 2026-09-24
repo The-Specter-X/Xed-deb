@@ -1,0 +1,3 @@
+usr/include/xed/
+usr/lib/*/pkgconfig/xed.pc
+usr/share/xed/gir-1.0/Xed-1.0.gir

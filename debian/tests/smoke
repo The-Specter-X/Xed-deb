@@ -1,0 +1,15 @@
+#!/bin/sh
+set -eu
+
+xed --version | grep -F '3.9.0'
+test -r /usr/share/applications/org.x.editor.desktop
+test -r /usr/share/glib-2.0/schemas/org.x.editor.gschema.xml
+multiarch=$(dpkg-architecture -qDEB_HOST_MULTIARCH)
+export GI_TYPELIB_PATH="/usr/lib/$multiarch/xed/girepository-1.0${GI_TYPELIB_PATH:+:$GI_TYPELIB_PATH}"
+export LD_LIBRARY_PATH="/usr/lib/$multiarch/xed${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+python3 - <<'PY'
+import gi
+gi.require_version('Xed', '1.0')
+from gi.repository import Xed
+assert Xed is not None
+PY

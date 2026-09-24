@@ -1,0 +1,14 @@
+*.build
+*.buildinfo
+*.changes
+*.deb
+*.dsc
+*.tar.*
+*.upload
+*.udeb
+debian/.debhelper/
+debian/debhelper-build-stamp
+debian/files
+debian/*.debhelper.log
+debian/*.substvars
+obj-*/

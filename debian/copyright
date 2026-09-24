@@ -1,0 +1,576 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: xed
+Upstream-Contact: Linux Mint <root@linuxmint.com>
+Source: https://github.com/linuxmint/xed
+Files-Excluded: debian
+
+Files: *
+Copyright: 1998-2026, Linux Mint and the Xed, Pluma, and gedit contributors
+License: GPL-2+
+Comment:
+ Individual files may have additional credited authors. See their headers.
+
+Files: plugins/open-uri-context-menu/open-uri-context-menu/*
+Copyright: 2007-2008, Martin Szulecki
+           2011, Jean-Philippe Fleury <contact@jpfleury.net>
+License: GPL-3+
+
+Files: plugins/docinfo/xed-docinfo-plugin.c
+       plugins/docinfo/xed-docinfo-plugin.h
+       plugins/spell/xed-spell-checker-dialog.c
+       plugins/spell/xed-spell-checker-dialog.h
+       plugins/spell/xed-spell-checker-language.h
+       plugins/spell/xed-spell-checker.c
+       plugins/spell/xed-spell-checker.h
+       plugins/spell/xed-spell-language-dialog.c
+       plugins/spell/xed-spell-language-dialog.h
+       plugins/spell/xed-spell-plugin.c
+       plugins/spell/xed-spell-plugin.h
+       plugins/taglist/xed-taglist-plugin-panel.c
+       plugins/taglist/xed-taglist-plugin-panel.h
+       plugins/taglist/xed-taglist-plugin-parser.c
+       plugins/taglist/xed-taglist-plugin-parser.h
+       plugins/taglist/xed-taglist-plugin.c
+       plugins/taglist/xed-taglist-plugin.h
+       plugins/time/xed-time-plugin.c
+       plugins/time/xed-time-plugin.h
+       xed/dialogs/xed-encodings-dialog.c
+       xed/dialogs/xed-encodings-dialog.h
+       xed/dialogs/xed-preferences-dialog.c
+       xed/dialogs/xed-preferences-dialog.h
+       xed/dialogs/xed-search-dialog.c
+       xed/dialogs/xed-search-dialog.h
+       xed/xed-app.c
+       xed/xed-app.h
+       xed/xed-documents-panel.c
+       xed/xed-documents-panel.h
+       xed/xed-encodings-combo-box.c
+       xed/xed-encodings-combo-box.h
+       xed/xed-encodings.h
+       xed/xed-file-chooser-dialog.c
+       xed/xed-file-chooser-dialog.h
+       xed/xed-help.c
+       xed/xed-help.h
+       xed/xed-io-error-message-area.c
+       xed/xed-io-error-message-area.h
+       xed/xed-language-manager.c
+       xed/xed-language-manager.h
+       xed/xed-metadata-manager.c
+       xed/xed-metadata-manager.h
+       xed/xed-panel.c
+       xed/xed-panel.h
+       xed/xed-plugin-manager.h
+       xed/xed-plugin.c
+       xed/xed-plugin.h
+       xed/xed-plugins-engine.c
+       xed/xed-plugins-engine.h
+       xed/xed-prefs-manager-app.c
+       xed/xed-prefs-manager-app.h
+       xed/xed-prefs-manager-private.h
+       xed/xed-prefs-manager.c
+       xed/xed-prefs-manager.h
+       xed/xed-progress-message-area.c
+       xed/xed-progress-message-area.h
+       xed/xed-tab.c
+       xed/xed-tab.h
+       xed/xed-ui.h
+       xed/xed-ui.xml
+       xed/xed-window-private.h
+       xed/xed-window.c
+       xed/xed-window.h
+       xed/xed.c
+Copyright: 2001-2007, Paolo Maggi
+License: GPL-2+
+
+Files: plugins/filebrowser/xed-file-bookmarks-store.c
+       plugins/filebrowser/xed-file-bookmarks-store.h
+       plugins/filebrowser/xed-file-browser-error.h
+       plugins/filebrowser/xed-file-browser-messages.h
+       plugins/filebrowser/xed-file-browser-plugin.c
+       plugins/filebrowser/xed-file-browser-plugin.h
+       plugins/filebrowser/xed-file-browser-store.c
+       plugins/filebrowser/xed-file-browser-store.h
+       plugins/filebrowser/xed-file-browser-utils.c
+       plugins/filebrowser/xed-file-browser-view.c
+       plugins/filebrowser/xed-file-browser-view.h
+       plugins/filebrowser/xed-file-browser-widget.c
+       plugins/filebrowser/xed-file-browser-widget.h
+       plugins/snippets/snippets/Document.py
+       plugins/snippets/snippets/Helper.py
+       plugins/snippets/snippets/Library.py
+       plugins/snippets/snippets/Manager.py
+       plugins/snippets/snippets/Parser.py
+       plugins/snippets/snippets/Placeholder.py
+       plugins/snippets/snippets/Snippet.py
+       plugins/snippets/snippets/SubstitutionParser.py
+       plugins/snippets/snippets/WindowHelper.py
+       plugins/snippets/snippets/__init__.py
+Copyright: 2005-2008, Jesse van den Kieboom <jesse@icecrew.nl>
+License: GPL-2+
+
+Files: plugin-loaders/c/xed-plugin-loader-c.c
+       plugin-loaders/c/xed-plugin-loader-c.h
+       plugin-loaders/python/xed-plugin-loader-python.c
+       plugin-loaders/python/xed-plugin-loader-python.h
+       plugins/quickopen/quickopen/__init__.py
+       plugins/quickopen/quickopen/popup.py
+       plugins/quickopen/quickopen/virtualdirs.py
+       plugins/quickopen/quickopen/windowhelper.py
+       plugins/spell/xed-spell-utils.c
+       plugins/spell/xed-spell-utils.h
+       xed/xed-plugin-loader.c
+       xed/xed-plugin-loader.h
+       xed/xed-status-combo-box.c
+       xed/xed-status-combo-box.h
+       tests/document-loader.c
+       tests/document-saver.c
+Copyright: 2008-2010, Jesse van den Kieboom
+License: GPL-2+
+
+Files: xed/xed-commands-documents.c
+       xed/xed-commands-edit.c
+       xed/xed-commands-file-print.c
+       xed/xed-commands-file.c
+       xed/xed-commands-search.c
+       xed/xed-commands-view.c
+       xed/xed-commands.h
+       xed/xed-debug.c
+       xed/xed-debug.h
+       xed/xed-document.c
+       xed/xed-document.h
+       xed/xed-utils.c
+       xed/xed-utils.h
+       xed/xed-view.c
+       xed/xed-view.h
+Copyright: 1998-1999, Alex Roberts, Evan Lawrence
+           2000-2002, Chema Celorio, Paolo Maggi
+           2002-2006, Paolo Maggi
+License: GPL-2+
+
+Files: plugins/changecase/xed-changecase-plugin.c
+       plugins/changecase/xed-changecase-plugin.h
+       xed/xed-close-button.c
+       xed/xed-close-button.h
+       xed/xed-history-entry.c
+       xed/xed-history-entry.h
+       xed/xed-print-preview.c
+       xed/xed-print-preview.h
+       xed/xed-statusbar.c
+       xed/xed-statusbar.h
+       xed/xed-style-scheme-manager.h
+       xed/xed-tab-label.c
+       xed/xed-tab-label.h
+Copyright: 2004-2010, Paolo Borelli
+License: GPL-2+
+
+Files: xed/xed-dirs.h
+       xed/xed-document-input-stream.c
+       xed/xed-document-input-stream.h
+       xed/xed-document-output-stream.c
+       xed/xed-document-output-stream.h
+       xed/xed-smart-charset-converter.c
+       xed/xed-smart-charset-converter.h
+       tests/document-input-stream.c
+       tests/document-output-stream.c
+       tests/smart-converter.c
+Copyright: 2008-2010, Ignacio Casal Quinteiro
+License: GPL-2+
+
+Files: plugins/externaltools/scripts/xed-tool-merge.pl
+       plugins/externaltools/tools/library.py
+       plugins/modelines/modeline-parser.c
+       plugins/modelines/modeline-parser.h
+       plugins/modelines/xed-modeline-plugin.c
+       plugins/modelines/xed-modeline-plugin.h
+Copyright: 2005-2007, Steve Frécinaux <code@istique.net>
+License: GPL-2+
+
+Files: xed/xed-document-loader.c
+       xed/xed-document-loader.h
+       xed/xed-document-saver.h
+       xed/xed-plugin-info-priv.h
+       xed/xed-plugin-info.c
+       xed/xed-plugin-info.h
+Copyright: 2002-2005, Paolo Maggi
+           2007, Paolo Maggi
+           2007, Steve Frécinaux
+License: GPL-2+
+
+Files: xed/smclient/eggdesktopfile.h
+       xed/smclient/eggsmclient-private.h
+       xed/smclient/eggsmclient.c
+       xed/smclient/eggsmclient.h
+Copyright: 2007, Novell, Inc.
+License: LGPL-2+
+
+Files: plugins/externaltools/tools/__init__.py
+       plugins/externaltools/tools/capture.py
+       plugins/externaltools/tools/functions.py
+       plugins/externaltools/tools/manager.py
+       tools/generate-plugin.py
+       tools/preprocessor.py
+       tools/plugin_template/xed-plugin.c
+       tools/plugin_template/xed-plugin.h
+Copyright: 2005-2006, Steve Frécinaux <steve@istique.net>
+           2006, Steve Frécinaux <steve@istique.net>
+License: GPL-2+
+
+Files: xed/xed-gio-document-loader.c
+       xed/xed-gio-document-loader.h
+       xed/xed-gio-document-saver.h
+Copyright: 2005, Paolo Maggi
+           2007, Paolo Maggi, Steve Frécinaux
+           2008, Jesse van den Kieboom
+License: GPL-2+
+
+Files: plugins/sort/xed-sort-plugin.c
+       plugins/sort/xed-sort-plugin.h
+Copyright: *No copyright*
+License: GPL-2+
+
+Files: plugins/pythonconsole/pythonconsole/__init__.py
+       plugins/pythonconsole/pythonconsole/console.py
+Copyright: 1998, James Henstridge <james@daa.com.au>
+           2005, Adam Hooper <adamh@densi.com>
+           2006, Steve Frécinaux
+License: GPL-2+
+
+Files: xed/bacon-message-connection.c
+       xed/bacon-message-connection.h
+Copyright: 2003, Bastien Nocera <hadess@hadess.net>
+License: GPL-2+
+
+Files: xed/xed-print-job.c
+       xed/xed-print-job.h
+Copyright: 2000-2001, Chema Celorio, Paolo Maggi
+           2002-2008, Paolo Maggi
+License: GPL-2+
+
+Files: xed/xed-notebook.c
+       xed/xed-notebook.h
+Copyright: 2002, Christophe Fergeau
+           2003, Marco Pesenti Gritti
+           2003-2004, Christian Persch
+           2005, Paolo Maggi
+License: GPL-2+
+
+Files: xed/xed-object-module.c
+       xed/xed-object-module.h
+Copyright: 2003, Marco Pesenti Gritti
+           2003-2004, Christian Persch
+           2005, Paolo Maggi
+           2008, Jesse van den Kieboom
+License: GPL-2+
+
+Files: plugins/spell/xed-automatic-spell-checker.c
+       plugins/spell/xed-automatic-spell-checker.h
+Copyright: 2002, Evan Martin
+           2002, Paolo Maggi
+License: GPL-2+
+
+Files: xed/xedtextregion.c
+       xed/xedtextregion.h
+Copyright: 2002, Gustavo Giráldez <gustavo.giraldez@gmx.net>
+License: GPL-2+
+
+Files: plugins/checkupdate/xed-check-update-plugin.c
+       plugins/checkupdate/xed-check-update-plugin.h
+Copyright: 2009, Ignacio Casal Quinteiro <icq@gnome.org>
+License: GPL-2+
+
+Files: plugin-loaders/python/xed-plugin-python.c
+       plugin-loaders/python/xed-plugin-python.h
+Copyright: 2005, Raphael Slinckx
+           2008, Jesse van den Kieboom
+License: GPL-2+
+
+Files: xed/dialogs/xed-close-confirmation-dialog.c
+       xed/dialogs/xed-close-confirmation-dialog.h
+Copyright: 2004-2005, GNOME Foundation
+License: GPL-2+
+
+Files: xed/xed-session.c
+       xed/xed-session.h
+Copyright: 2002, Ximian, Inc.
+           2005, Paolo Maggi
+License: GPL-2+
+
+Files: plugins/externaltools/tools/filelookup.py
+       plugins/externaltools/tools/linkparsing.py
+Copyright: 2009-2010, Per Arneng <per.arneng@anyplanet.com>
+License: GPL-2+
+
+Files: ./xed/xed-plugin-info.h
+Copyright: 2002-2005, Paolo Maggi
+           2007, Paolo Maggi
+           2007, Steve Frécinaux
+License: GPL-2+
+
+Files: plugins/pythonconsole/pythonconsole/config.py
+Copyright: 1998, James Henstridge <james@daa.com.au>
+           2005, Adam Hooper <adamh@densi.com>
+           2008, B. Clausius
+License: GPL-2+
+
+Files: xed/xed-commands-help.c
+Copyright: 1998-1999, Alex Roberts, Evan Lawrence
+           2000-2001, Chema Celorio, Paolo Maggi
+           2002-2005, Paolo Maggi
+           2011, Perberos
+License: GPL-2+
+
+Files: plugins/spell/xed-spell-checker-language.c
+Copyright: 2003-2004, Christian Persch
+           2006, Paolo Maggi
+License: GPL-2+
+
+Files: xed/xed-dirs.c
+Copyright: 2008, Ignacio Casal Quinteiro
+           2011, Perberos
+License: GPL-2+
+
+Files: xed/xed-gio-document-saver.c
+Copyright: 2005-2006, Paolo Borelli and Paolo Maggi
+           2007, Paolo Borelli, Paolo Maggi, Steve Frécinaux
+           2008, Jesse van den Kieboom
+License: GPL-2+
+
+Files: xed/xed-style-scheme-manager.c
+Copyright: 2007, Paolo Borelli and Paolo Maggi
+License: GPL-2+
+
+Files: xed/xed-document-saver.c
+Copyright: 2005-2006, Paolo Borelli and Paolo Maggi
+           2007, Paolo Borelli, Paolo Maggi, Steve Frécinaux
+License: GPL-2+
+
+Files: xed/xed-plugin-manager.c
+Copyright: 2002, Paolo Maggi and James Willcox
+           2003-2006, Paolo Maggi
+License: GPL-2+
+
+Files: xed/xed-encodings.c
+Copyright: 2002, Red Hat, Inc.
+           2002-2005, Paolo Maggi
+License: GPL-2+
+
+Files: plugins/externaltools/tools/outputpanel.py
+Copyright: 2005-2006, Steve Frécinaux <steve@istique.net>
+           2010, Per Arneng <per.arneng@anyplanet.com>
+License: GPL-2+
+
+Files: xed/smclient/eggsmclient-xsmp.c
+Copyright: 1998, Carsten Schaar
+           1998, The Open Group
+           2007, Novell, Inc.
+License: LGPL-2+
+
+Files: xed/smclient/eggdesktopfile.c
+Copyright: 1999-2000, Red Hat Inc.
+           2001, George Lebl
+           2007, Novell, Inc.
+License: LGPL-2+
+
+Files: data/*.in.in
+       data/*.sh.in
+       data/xed.1
+       data/*.convert
+       data/*.desktop.in.in
+       data/*.pc.in
+       data/*.xml.in
+       docs/*.dia
+       docs/reference/*.txt
+       docs/reference/*.sgml
+       docs/reference/*.types
+       help/Makefile.am
+       m4/python.m4
+       pixmaps/*.png
+       pixmaps/*.ico
+       plugins/*/*.desktop.in
+       plugins/*/*.xml.in.in
+       plugins/*/*.ui
+       plugins/externaltools/data/*.desktop.in
+       plugins/externaltools/data/*.tool.in
+       plugins/filebrowser/*.template
+       plugins/filebrowser/*-marshal.list
+       plugins/modelines/language-mappings
+       plugins/filebrowser/xed-file-browser-messages.c
+       plugins/filebrowser/xed-file-browser-utils.h
+       plugins/snippets/snippets/Completion.py
+       plugins/snippets/snippets/Exporter.py
+       plugins/snippets/snippets/Importer.py
+       plugins/snippets/snippets/LanguageManager.py
+       plugins/snippets/data/*.xml
+       plugins/snippets/data/lang/snippets.lang
+       plugins/snippets/snippets/*.ui
+       plugins/taglist/*.xml.in
+       xed/xed-message-bus.c
+       xed/xed-message-bus.h
+       xed/xed-message-type.c
+       xed/xed-message-type.h
+       xed/xed-message.c
+       xed/xed-message.h
+       xed/*.template
+       xed/*.ui
+       xed/*.rc
+       xed/dialogs/*.ui
+       tests/setup-document-saver.sh
+       data/Makefile.am
+       docs/reference/Makefile.am
+       docs/Makefile.am
+       pixmaps/Makefile.am
+       plugin-loaders/c/Makefile.am
+       plugin-loaders/Makefile.am
+       plugin-loaders/python/Makefile.am
+       plugin-loaders/python/bindings/Makefile.am
+       plugin-loaders/python/bindings/xed.defs
+       plugin-loaders/python/bindings/xed.override
+       plugin-loaders/python/bindings/xedcommands.defs
+       plugin-loaders/python/bindings/xedcommands.override
+       plugin-loaders/python/bindings/xedmessage.override
+       plugin-loaders/python/bindings/xedplugin.override
+       plugin-loaders/python/bindings/xedutils.defs
+       plugin-loaders/python/bindings/xedutils.override
+       plugins/time/Makefile.am
+       plugins/docinfo/Makefile.am
+       plugins/pythonconsole/pythonconsole/Makefile.am
+       plugins/pythonconsole/Makefile.am
+       plugins/filebrowser/Makefile.am
+       plugins/filebrowser/xed-file-browser-widget-ui.xml
+       plugins/quickopen/quickopen/Makefile.am
+       plugins/quickopen/Makefile.am
+       plugins/spell/Makefile.am
+       plugins/spell/xed-spell-marshal.list
+       plugins/Makefile.am
+       plugins/modelines/Makefile.am
+       plugins/externaltools/tools/Makefile.am
+       plugins/externaltools/Makefile.am
+       plugins/externaltools/data/Makefile.am
+       plugins/externaltools/scripts/Makefile.am
+       plugins/taglist/Makefile.am
+       plugins/changecase/Makefile.am
+       plugins/checkupdate/Makefile.am
+       plugins/snippets/Makefile.am
+       plugins/snippets/data/lang/Makefile.am
+       plugins/snippets/data/Makefile.am
+       plugins/snippets/snippets/Makefile.am
+       plugins/sort/Makefile.am
+       xed/xed-marshal.list
+       po/gnome-copyrights.txt
+       xed/Makefile.am
+       xed/smclient/Makefile.am
+       xed/dialogs/Makefile.am
+       po/LINGUAS
+       po/POTFILES.in
+       po/POTFILES.skip
+       tests/Makefile.am
+       tools/plugin_template/Makefile.am
+       tools/plugin_template/xed-plugin.desktop.in
+       .tx/config
+       AUTHORS
+       COPYING
+       ChangeLog
+       HACKING
+       Makefile.am
+       NEWS
+       NEWS.GNOME
+       README
+       autogen.sh
+       configure.ac
+Copyright: *No copyright*
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: po/*.po
+Copyright: 2005, Free Software Foundation, Inc.
+           2006, Norayr Chilingaryan
+           THE PACKAGE'S COPYRIGHT HOLDER
+License: GPL-2+ or LGPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: help/*.in
+       help/ar/*
+       help/bg/*
+       help/C/*
+       help/ca/*
+       help/cs/*
+       help/da/*
+       help/de/*
+       help/el/*
+       help/es/*
+       help/fi/*
+       help/fr/*
+       help/hu/*
+       help/it/*
+       help/ja/*
+       help/ko/*
+       help/oc/*
+       help/pt_BR/*
+       help/ru/*
+       help/sv/*
+       help/th/*
+       help/uk/*
+       help/zh_CN/*
+       help/zh_HK/*
+       help/zh_TW/*
+Copyright: 2006-2010 Free Software Foundation, Inc.
+License: GFDL-1.1+
+
+Files: debian/*
+Copyright: 2026, James Arden <theoverseer@tuta.com>
+License: GPL-2+
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU Library General
+ Public License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
+
+License: GFDL-1.1+
+ Permission is granted to copy, distribute and/or modify this
+ document under the terms of the GNU Free Documentation
+ License (GFDL), Version 1.1 or any later version published
+ by the Free Software Foundation with no Invariant Sections,
+ no Front-Cover Texts, and no Back-Cover Texts.
+ .
+ On Debian systems, the complete text of the GNU Free Documentation License
+ version 1.2 can be found in "/usr/share/common-licenses/GFDL-1.2".
+
+License: GPL-3+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 3 of the License, or
+ (at your option) any later version.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ version 3 is in "/usr/share/common-licenses/GPL-3".
