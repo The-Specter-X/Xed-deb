@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu
+
+test_directory=${AUTOPKGTEST_TMP:-$(mktemp -d)}
+cc -Werror=implicit-function-declaration debian/tests/library.c \
+    -o "$test_directory/library-test" $(pkg-config --cflags --libs xed)
+multiarch=$(dpkg-architecture -qDEB_HOST_MULTIARCH)
+export LD_LIBRARY_PATH="/usr/lib/$multiarch/xed${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+xvfb-run -a "$test_directory/library-test"

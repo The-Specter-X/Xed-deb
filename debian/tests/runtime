@@ -1,0 +1,32 @@
+#!/bin/sh
+set -eu
+
+version=$(dpkg-query -W -f='${Version}' xed)
+version=${version#*:}
+xed --version | grep -F -- "${version%-*}"
+test -r /usr/share/applications/org.x.editor.desktop
+test -r /usr/share/glib-2.0/schemas/org.x.editor.gschema.xml
+multiarch=$(dpkg-architecture -qDEB_HOST_MULTIARCH)
+export GI_TYPELIB_PATH="/usr/lib/$multiarch/xed/girepository-1.0${GI_TYPELIB_PATH:+:$GI_TYPELIB_PATH}"
+export LD_LIBRARY_PATH="/usr/lib/$multiarch/xed${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+xvfb-run -a python3 - "/usr/lib/$multiarch/xed/plugins" <<'PY'
+import sys
+from types import SimpleNamespace
+import gi
+gi.require_version('Gtk', '3.0')
+gi.require_version('GtkSource', '4')
+gi.require_version('Xed', '1.0')
+from gi.repository import Gtk, Xed
+
+Gtk.init([])
+document = Xed.Document.new()
+document.set_text('first\nsecond', -1)
+document.select_range(document.get_start_iter(), document.get_end_iter())
+sys.path.insert(0, sys.argv[1])
+from joinlines import JoinLinesPlugin
+plugin = SimpleNamespace(window=SimpleNamespace(get_active_document=lambda: document))
+JoinLinesPlugin.join_lines(plugin, None)
+assert document.get_text(document.get_start_iter(), document.get_end_iter(), True) == 'first second'
+document.set_modified(False)
+assert not document.get_modified()
+PY

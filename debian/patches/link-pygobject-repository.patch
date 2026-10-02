@@ -1,0 +1,36 @@
+Description: link the GIRepository API selected by the PyGObject version
+ Xed selects GIRepository's newer API with PyGObject newer than 3.50.
+ Add the corresponding dependency so the selected API has include and link
+ flags, while retaining the old API for older PyGObject versions.
+Author: James Arden <theoverseer@tuta.com>
+Forwarded: no
+Last-Update: 2026-10-02
+--- a/meson.build
++++ b/meson.build
+@@ -38,12 +38,16 @@
+ X11 = dependency('x11')
+ pango = dependency('pango')
+ 
++repository_dep = gir_dep
+ if gir_dep.found()
+     xed_conf.set('ENABLE_INTROSPECTION', 1)
+     pygobject_dep = dependency('pygobject-3.0')
+     pygobject_version = pygobject_dep.version().split('.')
+     xed_conf.set('PYGOBJECT_MAJOR_VERSION', pygobject_version[0])
+     xed_conf.set('PYGOBJECT_MINOR_VERSION', pygobject_version[1])
++    if pygobject_version[0].to_int() > 3 or (pygobject_version[0].to_int() == 3 and pygobject_version[1].to_int() > 50)
++        repository_dep = dependency('girepository-2.0', version: '>= 2.86')
++    endif
+ endif
+ 
+ enable_spell = get_option('enable_spell')
+--- a/xed/meson.build
++++ b/xed/meson.build
+@@ -134,6 +134,7 @@
+     libxml,
+     math,
+     xapp,
++    repository_dep,
+     X11
+ ]
+ 

@@ -1,2 +1,7 @@
-Tests: smoke
-Depends: @, dpkg-dev, python3-gi
+Tests: runtime
+Depends: xed, dpkg-dev, python3-gi, xvfb, xauth
+Restrictions: allow-stderr
+
+Tests: development
+Depends: xed-dev, build-essential, pkgconf, dpkg-dev, xvfb, xauth
+Restrictions: allow-stderr
